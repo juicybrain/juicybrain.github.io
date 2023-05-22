@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://igv.org/web/release/2.7.4/dist/igv.min.js"></script>
+    <script src="https://igv.org/web/release/2.15.7/dist/igv.min.js"></script>
 </head>
 <body>
 <div id="igvDiv" style="padding-top: 10px;padding-bottom: 10px;"></div>
@@ -12,22 +12,24 @@
         showNavigation: true,
         showRuler: true,
         genome: "mm10",
-        locus: "chr1:1-1,000,000",
+        locus: "chr1:1-200,000",
         tracks: [
-            {
+
+             {
                 name: "Genes",
                 type: "annotation",
                 format: "bed",
                 url: "https://data.broadinstitute.org/igvdata/test/annotations/genes.bed",
                 indexURL: "https://data.broadinstitute.org/igvdata/test/annotations/genes.bed.idx",
-                #displayMode: "EXPANDED"
-				displayMode: "COLLAPSED"
+                displayMode: "EXPANDED"
             },
-            {
-                #name: "D2_MSN_CG",
-                #url: "https://cdn.jsdelivr.net/gh/juicybrain/juicybrain.github.io@master/docs/bw/D2.WGBS.gene.proximal.CG.chr1.bw",
-                #indexURL: "https://data.broadinstitute.org/igvdata/test/alignments/egfr_lung.bam.bai"
-            }
+				{
+				name: "Genes",
+                type: "bigwig",
+                format: "bigwig",
+				url:"https://ftp.ncbi.nlm.nih.gov/geo/series/GSE197nnn/GSE197668/suppl/GSE197668_CKOCC.bw"
+				
+				}
         ]
     };
 
