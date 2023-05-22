@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://igv.org/web/release/2.7.4/dist/igv.min.js"></script>
+</head>
+<body>
+<div id="igvDiv" style="padding-top: 10px;padding-bottom: 10px;"></div>
+<script type="text/javascript">
+    var igvDiv = document.getElementById("igvDiv");
+    var options =
+    {
+        showNavigation: true,
+        showRuler: true,
+        genome: "mm10",
+        locus: "chr1:1-100,000,000",
+        tracks: [
+            {
+                name: "Genes",
+                type: "annotation",
+                format: "bed",
+                url: "https://data.broadinstitute.org/igvdata/test/annotations/genes.bed",
+                indexURL: "https://data.broadinstitute.org/igvdata/test/annotations/genes.bed.idx",
+                displayMode: "EXPANDED"
+            },
+            {
+                name: "Alignments",
+                url: "https://data.broadinstitute.org/igvdata/test/alignments/egfr_lung.bam",
+                indexURL: "https://data.broadinstitute.org/igvdata/test/alignments/egfr_lung.bam.bai"
+            }
+        ]
+    };
+
+    igv.createBrowser(igvDiv, options)
+        .then(function (browser) {
+            console.log("Created IGV browser");
+        })
+</script>
+</body>
+</html>
