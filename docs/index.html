@@ -12,7 +12,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+    <style>
+	.special {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+	}
 
+.special li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	}
+
+.special .icon, .special .label {
+    display: block;
+    margin: 0 auto; /* Centers both the icon and text horizontally */
+    padding-bottom: 5px; /* Adjusts the space below the icon */
+	}
+
+.special .label {
+    margin-top: 15px; /* Adds space between the icon and the text */
+	}
+	
+	.special {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+}
+	</style>
+	
 	
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -30,11 +66,11 @@
 
 
 			<!-- Banner -->
-				<section id="banner">
+	<!--			<section id="banner">
 					<div class="content">
 						<h2>Greetings</h2>
 					</div>
-				</section>
+				</section>       -->    
 
 			<!-- Main -->
 				<section id="main">
@@ -44,19 +80,21 @@
 
 								<!-- Highlight -->
 									<section class="box highlight">
-										<ul class="special">
-											<li><a href="#china" class="icon solid fa-star fa-xs",style="background:#FFDE00"><span class="label"></span></a></li> 
-											<li><a href="#usa" class="icon solid fa-duotone fa-flag-usa fa-xs"><span class="label"> </span></a></li>
-											<li><a href="#research" class="icon solid fa-flask fa-xs"><span class="label">Flask</span></a></li>
-											<li><a href="#publication" class="icon solid fa-scroll fa-xs"><span class="label">Scroll</span></a></li>
-											<li><a href="#contact" class="icon solid fa-regular fa-address-card fa-xs"><span class="label"></span></a></li>
-										</ul>
 										<header>
 											<h2>menu</h2>
-<!-- 											<p> text </p> -->
+											<p>  </p> 
 										</header>
+
+
+										<ul class="special">
+											<li><a href="#china" class="icon solid fa-star fa-xs",style="background:#FFDE00"><span class="label">China</span></a></li> 
+											<li><a href="#usa" class="icon solid fa-duotone fa-flag-usa fa-xs"><span class="label">USA</span></a></li> 
+											<li><a href="#research" class="icon solid fa-flask fa-xs"><span class="label">Research</span></a></li> 
+											<li><a href="#publication" class="icon solid fa-scroll fa-xs"><span class="label">Publication</span></a></li> 
+											<li><a href="#contact" class="icon solid fa-address-card fa-xs"><span class="label">Contact</span></a></li> 
+										</ul>
 										<p>
-											I am Yuxiang from Sichuan, P.R. China. I am interested in epigenomics and gene expression regulation. I received my PhD degree at Sichuan University in Chengdu City working on epigenetic regulation of fruit development. My research has been extended to functional genomics thereafter at the Chinese University of Hong Kong, where I developed an assay combining ChIP-seq by Tn5 tagmentation and Agrobacterium-mediated transient expression to profile the transcription factor (TF)-binding events in plants. Using this technique, the ChIP-seq assays of more than 100 TFs have been performed in Nicotiana benthamiana (a type of tobacco) leaves. Since April 2019, I have been working as a postdoctoral scholar at Florida State University on epigenetic mechanisms underpinning drug addiction using mouse models. Here, in collaboration with other researchers, I investigate drug addiction-associated DNA methylation and chromatin architecture changes in neurons. When I am out of the lab, I usually play basketball, football/soccer, skateboarding, badminton or tennis, or spend my time in the woods.
+										I am Yuxiang and I am interested in epigenomics. I received my PhD degree at Sichuan University in Chengdu City working on epigenetic regulation in plant. My research has been extended to functional genomics thereafter at the Chinese University of Hong Kong. Since April 2019, I have been working as a postdoctoral scholar at Florida State University on epigenetic mechanisms underpinning drug addiction. Here, in collaboration with other researchers, I investigate drug addiction-associated DNA methylation and chromatin architecture changes in neurons. When I am free, I usually play basketball, football/soccer, skateboarding, badminton or tennis, or spend my time in the woods.	
 										</p> 
 									</section>
 
@@ -121,13 +159,8 @@
 											</div>
 										</div>
 									</section>
-								</div>
-								
-								
-						
-								<p> </p>
-								
-
+								</div>																				
+								<p> </p>							
 								
 								<div id="usa"></div>
 								<div class="col-12">
@@ -219,15 +252,30 @@
 														<p>
 														Illicit drug abuse poses problems to all societies in multiple facets, including human health and medical expenses, social security and stability, workforce and productivity. Intriguingly, only about 10% to 16% of humans become addicted to drugs. Presumably, both environmental and genetic risk factors contribute to the aetiology, but the underlying molecular mechanism is still elusive due to the anatomical characterization of the human brain. Utilizing mouse behaviour models, bioinformatic techniques and Low-cell number NGS sequencing tools such as whole-genome bisulfite sequencing, ATAC-seq, Hi-C and RNA-seq, I am investigating drug addiction-related epigenetic alterations in cell type-specific neurons of drug addiction-related brain regions. 
 														</p>
-														<ul>
-															<li> <a href="https://pubmed.ncbi.nlm.nih.gov/35205351/">Related publication 1</a>	</li>
-														</ul>
-														
+													
+														<body>
+														<button onclick="window.location.href='WGBS_EM.html'"> DNA Methylation Profiling of NAc D2-MSN Using Two Distinct Methods</button>
+														</body>
+															    <p>
+																	
+																</p>
+																
+														<body>
+														<button onclick="window.location.href='Sex_specific_role of TET1.unpublished.html'"> Sex-specific role of DNA dioxygenase TET1 in cocaine addiction </button>
+														</body>		
+																
+																 <p>
+																	
+																</p>
 
 														<body>
 														<button onclick="window.location.href='igv.html'">Open IGV Viewer</button>
 														</body>
-									
+														
+														<ul>
+															<li> <a href="https://pubmed.ncbi.nlm.nih.gov/35205351/">Related publication 1</a>	</li>
+														</ul>
+														
 														</section>
 														</div>
 													</div>
@@ -254,9 +302,14 @@
 														<p>
 															The gene expression of organisms is the result of the well-coordinated interplay of numerous biomacromolecules including the genome and other transcription factors or transcription regulators. With the advancement of massively parallel sequencing technologies, various tools have been developed for a deeper understanding of the fundamental mechanisms of gene transcription and regulation. Combining chromatin immunoprecipitation sequencing(ChIP-seq) by Tn5 tagmentation and Agrobacterium-mediated transient expression, I have developed a fast and easy-to-apply method and profiled the whole-genome binding sites of more than 100 transcription factors in tobacco (Nicotiana benthamiana).
 														</p>
-														<ul>
+																														
+															<body>
+															<button onclick="window.location.href='Nb.leaves.Cistrome.html'"> A transcription factor atlas in Nicotiana benthamiana leaves </button>
+															</body>																
+														
+															<ul>
 															<li> <a href="https://www.nature.com/articles/s41467-022-35438-4">Related publication 1</a>	</li>
-														</ul>
+															</ul>
 														</section>
 														</div>
 													</div>
